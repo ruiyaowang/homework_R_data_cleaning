@@ -1,5 +1,5 @@
 # Data
-==========
+
 Data introduction can be found in the original README.txt: 
 
 Human Activity Recognition Using Smartphones Dataset
@@ -70,7 +70,8 @@ Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012
 
 
 # Features
-==========
+
+
 The following information comes from the original features_info.txt, introducing features:
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -131,7 +132,8 @@ tBodyGyroJerkMean
 The complete list of variables of each feature vector is available in 'features.txt'
 
 # Transformation
-================
+
+
 Data include train and test for features(X_train.txt,X_test.txt), label(y_train.txt,y_test.txt), and subject(subject_train.txt,subject_test.txt).
 For X, y, and subject, train and test are first concatated to get the whole data. 
 The variable names of features are read from featurs.txt. Only mean and std columns are considered in combined X data. 
