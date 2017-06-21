@@ -1,15 +1,6 @@
 # Data
 ==========
-Data include train and test for features(X_train.txt,X_test.txt), label(y_train.txt,y_test.txt), and subject(subject_train.txt,subject_test.txt).
-For X, y, and subject, train and test are first concatated to get the whole data. 
-The variable names of features are read from featurs.txt. Only mean and std columns are considered in combined X data. 
-For y data, each labels are replaced with their descriptive activity names using the correspondence found in activity_labels.txt.
-Finally X, y, and subject are combined together using cbind. 
-
-
-
-More introduction of the data, which can be found in the original README.txt: 
-
+Data introduction can be found in the original README.txt: 
 
 Human Activity Recognition Using Smartphones Dataset
 Version 1.0
@@ -138,3 +129,12 @@ tBodyGyroMean
 tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
+
+# Transformation
+================
+Data include train and test for features(X_train.txt,X_test.txt), label(y_train.txt,y_test.txt), and subject(subject_train.txt,subject_test.txt).
+For X, y, and subject, train and test are first concatated to get the whole data. 
+The variable names of features are read from featurs.txt. Only mean and std columns are considered in combined X data. 
+For y data, each labels are replaced with their descriptive activity names using the correspondence found in activity_labels.txt.
+Finally X, y, and subject are combined together using cbind. 
+
