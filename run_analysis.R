@@ -10,7 +10,8 @@ features<-fread('features.txt')
 variables<-features[grep("mean\\(|std\\(",features$V2),]
 colnames(variables)<-c('col_index','col_name')
 
-combined<-combined[,num2,with=FALSE]
+
+combined<-combined[,variables$col_index,with=FALSE]
 colnames(combined)<-variables$col_name
 
 
@@ -34,4 +35,4 @@ colnames(combined_s)<-'subject'
 combine_all<-cbind(combined_s,combined_y,combined)
 melted<-melt(combine_all,id.vars = c('subject','activity'),measure.vars = names(combine_all)[3:ncol(combine_all)])
 tidy<-dcast(melted,subject+activity~variable,mean)
-write.csv(tidy, file = "tidy.csv")
+write.csv(tidy, file = "tidy_data.csv")
