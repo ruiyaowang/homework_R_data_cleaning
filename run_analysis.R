@@ -36,7 +36,7 @@ colnames(combined_s)<-'subject'
 # combine X,y,subjects
 combine_all<-cbind(combined_s,combined_y,combined)
 
-# use melted and dcast to group by subject and activity
+# use melt and dcast to group by subject and activity
 melted<-melt(combine_all,id.vars = c('subject','activity'),measure.vars = names(combine_all)[3:ncol(combine_all)])
 tidy<-dcast(melted,subject+activity~variable,mean)
 
