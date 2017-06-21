@@ -41,4 +41,4 @@ melted<-melt(combine_all,id.vars = c('subject','activity'),measure.vars = names(
 tidy<-dcast(melted,subject+activity~variable,mean)
 
 # write the cleaned data to csv
-write.csv(tidy, file = "tidy_data.csv")
+write.table(tidy, file = "tidy_data.txt",row.names = FALSE)
